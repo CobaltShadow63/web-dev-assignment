@@ -1,0 +1,266 @@
+/* Header */
+
+.logo{
+    display: inline; 
+    color:#0047ab;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 52px;
+    text-align: center;
+  }
+
+  /* Body Styling */
+#backgroundImg {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .landing-banner{
+    background-image:url(assets/banner.jpg);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-size: cover;
+    background-position: center;
+  }
+    
+  .container {
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  .shop-button {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 2px rgb(0, 0, 0) solid;
+    padding: 10px 15px;
+  }
+  
+  .shop-button:hover,
+  .shop-button:focus {
+    background: hsl(0, 100%, 100%, .2);
+    outline: none;
+  }
+  
+
+
+.contentAllText{
+    font-family: Impact;
+    color:rgba(255, 255, 255, 0.74);
+  }
+
+  /* Game Showcase Styling */
+
+  /* Navigation menu */
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+body div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body div ul li {
+    float: left;
+}
+  
+body div ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+body div ul li a:hover {
+    background-color: #111;
+}
+
+#active{
+    background-color:#0047ab;
+
+}
+
+
+
+body {
+  font-family: Impact;
+  background-color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;  
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {      
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%;      
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: gray;
+}
+
+
+.card__status {
+  font-size: .8em;
+  color: #bdc4d7;
+}
+
+.title{
+  align-items:center;
+
+}
+/* Footer  */
+footer{
+  display: inline-block;
+  bottom: 0%;
+  top: 100%;
+
+}
+footer img{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+/* Sign Up */
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+  
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #0047ab;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* Contact us page */
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #0047ab;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
